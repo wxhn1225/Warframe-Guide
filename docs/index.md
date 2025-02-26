@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Warframe Guide"
   text: "星际战甲知识库"
-  tagline: My great project tagline
+  tagline: 天堂有路你不走，学海无涯苦作舟
   actions:
     - theme: brand
       text: 中断竞速浅谈
