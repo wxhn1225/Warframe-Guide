@@ -15,11 +15,11 @@ hero:
       link: /减伤机制综述
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 待更新
+    details: 网站开发中，目测初期搭建好在一个月以后
+  - title: 待更新
+    details: 网站开发中，目测初期搭建好在一个月以后
+  - title: 待更新
+    details: 网站开发中，目测初期搭建好在一个月以后
 ---
 
