@@ -11,12 +11,13 @@ export default defineConfig({
             lazyLoading: true
         }
     },
+    lastUpdated: true,
     base: "/Warframe-Guide/",
     title: "Warframe Guide",
     description: "星际战甲知识库",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        // logo: '/logo.png', //站点logo
+        logo: '/书籍.png', //站点logo
         nav: [
             {text: '机制', link: '/机制/'},
             {
@@ -55,6 +56,9 @@ export default defineConfig({
         footer: {
             message: '星际战甲Q群：602704599',
             copyright: 'Copyright © 2025 wxhn1225'
+        },
+        lastUpdated:{
+            text: '上次更新',
         }
     }
 })

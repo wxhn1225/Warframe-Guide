@@ -7,8 +7,8 @@ hero:
   text: "星际战甲知识库"
   tagline: 天堂有路你不走，学海无涯苦作舟
   image:
-    src: /logo.svg
-    alt: 图片待添加
+    src: /warframe_circular.png
+    alt: 图片加载中
   actions:
     - theme: brand
       text: Markdown Examples
