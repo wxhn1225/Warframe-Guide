@@ -19,7 +19,7 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: 待更新
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 待更新
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
