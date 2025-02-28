@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/Warframe-Guide/",
   title: "Warframe Guide",
   description: "星际战甲知识库",
   themeConfig: {
