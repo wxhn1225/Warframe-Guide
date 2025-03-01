@@ -20,6 +20,7 @@ export default defineConfig({
     },
     head: [
         ['link', {rel: 'icon', href: '/Warframe-Guide/哈士奇.png'}],
+         ['link', { rel: 'stylesheet', href: '/Warframe-Guide/custom.css' }],
     ],
     lastUpdated: true,
     base: "/Warframe-Guide/",
