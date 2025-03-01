@@ -20,7 +20,7 @@ export default defineConfig({
     },
     head: [
         ['link', {rel: 'icon', href: '/Warframe-Guide/哈士奇.png'}],
-         ['link', { rel: 'stylesheet', href: '/Warframe-Guide/custom.css' }],
+        ['link', {rel: 'stylesheet', href: '/Warframe-Guide/custom.css'}],
     ],
     lastUpdated: true,
     base: "/Warframe-Guide/",
@@ -55,6 +55,15 @@ export default defineConfig({
                     text: "中断",
                     items: [
                         {text: '中断竞速浅谈', link: '/热门模式/中断/中断竞速浅谈'},
+                        {text: '待更新', link: '/热门模式/中断/无'}
+                    ]
+                }
+            ],
+            '/机制/': [
+                {
+                    text: "机制",
+                    items: [
+                        {text: '减伤机制综述', link: '/机制/减伤机制综述'},
                         {text: '待更新', link: '/热门模式/中断/无'}
                     ]
                 }
