@@ -4,5 +4,4 @@ node_modules/
 
 .vitepress/dist
 .vitepress/cache
-public/
 test.py
