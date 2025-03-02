@@ -1,4 +1,4 @@
-import {defineConfig} from 'vitepress'
+import {defineConfig, type DefaultTheme} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -30,44 +30,32 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         outline: {label: "大纲",},
         logo: '/书籍.png', //站点logo
-        nav: [
-            {text: '机制', link: '/机制/'},
-            {
-                text: '热门模式', items: [
-                    {text: '仲裁', link: '/热门模式/仲裁/'},
-                    {text: '中断', link: '/热门模式/中断/'},
-                ]
+        search: {
+            provider: 'local',
+            options: {
+                translations: {
+                    button: {
+                        buttonText: '搜索文档',
+                        buttonAriaLabel: '搜索文档'
+                    },
+                    modal: {
+                        noResultsText: '无法找到相关结果',
+                        resetButtonTitle: '清除查询条件',
+                        footer: {
+                            selectText: '选择',
+                            navigateText: '切换',
+                            closeText: '返回'
+                        }
+                    }
+                }
             }
-        ],
+        },
+        nav: nav(),
 
         sidebar: {
-            '/热门模式/仲裁/': [
-                {
-                    text: "仲裁",
-                    items: [
-                        {text: '待更新', link: '/热门模式/仲裁/无'},
-                        {text: '待更新', link: '/热门模式/中断/无'}
-                    ]
-                }
-            ],
-            '/热门模式/中断/': [
-                {
-                    text: "中断",
-                    items: [
-                        {text: '中断竞速浅谈', link: '/热门模式/中断/中断竞速浅谈'},
-                        {text: '待更新', link: '/热门模式/中断/无'}
-                    ]
-                }
-            ],
-            '/机制/': [
-                {
-                    text: "机制",
-                    items: [
-                        {text: '减伤机制综述', link: '/机制/减伤机制综述'},
-                        {text: '待更新', link: '/热门模式/中断/无'}
-                    ]
-                }
-            ],
+            '/热门模式/': {base: '/热门模式/', items: sidebarHotType()},
+            '/机制/': {base: '/机制/', items: sidebarMachine()},
+            '/战甲攻略/': {base: '/战甲攻略/', items: sidebarWarframe()}
         },
 
         socialLinks: [
@@ -76,10 +64,87 @@ export default defineConfig({
         ],
         footer: {
             message: '星际战甲Q群：602704599',
-            copyright: 'Copyright © 2025 wxhn1225'
+            copyright: `版权所有 © 2025-${new Date().getFullYear()} 喜欢`
         },
         lastUpdated: {
             text: '上次更新',
-        }
+        },
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
+        skipToContentLabel: '跳转到内容'
     }
 })
+
+function nav(): DefaultTheme.NavItem[] {
+    return [
+        {
+            text: '机制',
+            link: '/机制/'
+        },
+        {
+            text: '战甲攻略',
+            link: '/战甲攻略/'
+        },
+        {
+            text: '热门模式',
+            items: [
+                {text: '仲裁', link: '/热门模式/仲裁/'},
+                {text: '中断', link: '/热门模式/中断/'},
+                {text: '新模式', link: '/热门模式/最新模式/无'},
+            ]
+        },
+    ]
+}
+
+function sidebarHotType(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: "仲裁",
+            collapsed: false,
+            items: [
+                {text: '待更新', link: '/仲裁/无'},
+                {text: '待更新', link: '/中断/无'}
+            ]
+        },
+        {
+            text: "中断",
+            collapsed: false,
+            items: [
+                {text: '中断竞速浅谈', link: '/中断/中断竞速浅谈'},
+                {text: '待更新', link: '/中断/无'}
+            ]
+        },
+        {
+            text: "新模式",
+            collapsed: false,
+            items: [
+                {text: '中断竞速浅谈', link: '/中断/中断竞速浅谈'},
+                {text: '待更新', link: '/中断/无'}
+            ]
+        }
+    ]
+}
+
+function sidebarMachine(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: "机制",
+            items: [
+                {text: '减伤机制综述', link: '/减伤机制综述'},
+                {text: '待更新', link: '/中断/无'}
+            ]
+        }
+    ]
+}
+
+function sidebarWarframe(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: '战甲攻略',
+            collapsed: false,
+            items:[
+                {text:'伏特', link: '/伏特'},
+            ]
+        }
+    ]
+}
