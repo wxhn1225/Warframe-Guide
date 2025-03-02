@@ -129,6 +129,7 @@ function sidebarMachine(): DefaultTheme.SidebarItem[] {
     return [
         {
             text: "机制",
+            collapsed: false,
             items: [
                 {text: '减伤机制综述', link: '/减伤机制综述'},
                 {text: '待更新', link: '/中断/无'}
