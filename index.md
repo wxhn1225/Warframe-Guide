@@ -11,11 +11,11 @@ hero:
     alt: 图片加载中
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 知识讲堂
+      link: /知识讲堂/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 优质网站
+      link: /优质网站
 
 features:
   - title: 待更新
