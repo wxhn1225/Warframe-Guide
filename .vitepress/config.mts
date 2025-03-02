@@ -30,6 +30,10 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         outline: {label: "大纲",},
         logo: '/书籍.png', //站点logo
+            docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
         search: {
             provider: 'local',
             options: {
@@ -87,12 +91,17 @@ function nav(): DefaultTheme.NavItem[] {
         },
         {
             text: '热门模式',
-            items: [
-                {text: '仲裁', link: '/热门模式/仲裁/'},
-                {text: '中断', link: '/热门模式/中断/'},
-                {text: '新模式', link: '/热门模式/最新模式/无'},
-            ]
+            // items: [
+            //     {text: '仲裁', link: '/热门模式/仲裁/'},
+            //     {text: '中断', link: '/热门模式/中断/'},
+            //     {text: '新模式', link: '/热门模式/最新模式/无'},
+            // ],
+            link:'/热门模式/'
         },
+        {
+            text:'玩法',
+            link: '/玩法/'
+        }
     ]
 }
 
@@ -118,8 +127,8 @@ function sidebarHotType(): DefaultTheme.SidebarItem[] {
             text: "新模式",
             collapsed: false,
             items: [
-                {text: '中断竞速浅谈', link: '/中断/中断竞速浅谈'},
-                {text: '待更新', link: '/中断/无'}
+                {text: '待更新', link: '/新模式/无'},
+                {text: '待更新', link: '/新模式/无'}
             ]
         }
     ]
