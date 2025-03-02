@@ -1,1 +1,1 @@
-<a href="./download/Hello.md" download>测试下载</a>
+[测试下载](Hello.md){target="download", download}
