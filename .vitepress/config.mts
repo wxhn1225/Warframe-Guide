@@ -30,10 +30,11 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         outline: {label: "大纲",},
         logo: '/书籍.png', //站点logo
-            docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    },
+        docFooter:
+            {
+                prev: '上一页',
+                next: '下一页'
+            },
         search: {
             provider: 'local',
             options: {
@@ -73,6 +74,9 @@ export default defineConfig({
         lastUpdated: {
             text: '上次更新',
         },
+        returnToTopLabel: '回到顶部',
+        sidebarMenuLabel: '菜单',
+        darkModeSwitchLabel: '主题',
         lightModeSwitchTitle: '切换到浅色模式',
         darkModeSwitchTitle: '切换到深色模式',
         skipToContentLabel: '跳转到内容'
@@ -87,20 +91,20 @@ function nav(): DefaultTheme.NavItem[] {
         },
         {
             text: '战甲攻略',
-            link: '/战甲攻略/'
+            link: '/战甲攻略/',
         },
         {
             text: '热门模式',
-            // items: [
-            //     {text: '仲裁', link: '/热门模式/仲裁/'},
-            //     {text: '中断', link: '/热门模式/中断/'},
-            //     {text: '新模式', link: '/热门模式/最新模式/无'},
-            // ],
-            link:'/热门模式/'
+            link: '/热门模式/仲裁/',
+
         },
         {
-            text:'玩法',
-            link: '/玩法/'
+            text: '热门玩法',
+            link: '/热门玩法/仲裁/',
+        },
+        {
+            text: '最新',
+            items: navLatest(),
         }
     ]
 }
@@ -152,9 +156,18 @@ function sidebarWarframe(): DefaultTheme.SidebarItem[] {
         {
             text: '战甲攻略',
             collapsed: false,
-            items:[
-                {text:'伏特', link: '/伏特'},
+            items: [
+                {text: '伏特', link: '/伏特'},
             ]
         }
+    ]
+}
+
+
+function navLatest(): DefaultTheme.NavItemWithLink[] {
+    return [
+        {text: '新战甲', link: '/战甲攻略/伏特'},
+        {text: '新模式', link: '/热门模式/中断/'},
+        {text: '新玩法', link: '/热门玩法/中断/'},
     ]
 }
