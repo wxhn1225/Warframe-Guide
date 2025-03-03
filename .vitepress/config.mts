@@ -20,7 +20,7 @@ export default defineConfig({
     },
     head: [
         ['link', {rel: 'icon', href: '/Warframe-Guide/哈士奇.png'}],
-        ['link', {rel: 'stylesheet', href: '/Warframe-Guide/custom.css'}],
+        ['link', {rel: 'stylesheet', href: '/Warframe-Guide/custom.css'}], //表格居中
     ],
     lastUpdated: true,
     base: "/Warframe-Guide/",
@@ -28,7 +28,7 @@ export default defineConfig({
     description: "星际战甲知识库",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        outline: {label: "大纲",},
+        outline: {level:[2,3],label: "大纲",},
         logo: '/书籍.png', //站点logo
         docFooter:
             {
@@ -60,7 +60,8 @@ export default defineConfig({
         sidebar: {
             '/热门模式/': {base: '/热门模式/', items: sidebarHotType()},
             '/机制/': {base: '/机制/', items: sidebarMachine()},
-            '/战甲攻略/': {base: '/战甲攻略/', items: sidebarWarframe()}
+            '/配置/': {base: '/配置/', items: sidebarBuild()},
+            '/最新/': {base: '/最新/', items: sidebarLatest()},
         },
 
         socialLinks: [
@@ -83,6 +84,7 @@ export default defineConfig({
     }
 })
 
+//导航栏
 function nav(): DefaultTheme.NavItem[] {
     return [
         {
@@ -90,25 +92,40 @@ function nav(): DefaultTheme.NavItem[] {
             link: '/机制/'
         },
         {
-            text: '战甲攻略',
-            link: '/战甲攻略/',
+            text: '配置',
+            items: navBuild(),
         },
         {
-            text: '热门模式',
-            link: '/热门模式/仲裁/',
-
-        },
-        {
-            text: '热门玩法',
-            link: '/热门玩法/仲裁/',
+            text: '指南',
+            items: navGuide(),
         },
         {
             text: '最新',
-            items: navLatest(),
+            link: '/最新/',
         }
     ]
 }
 
+//导航栏配置
+function navBuild(): DefaultTheme.NavItemWithLink[] {
+    return [
+        {text: '战甲', link: '/配置/战甲/'},
+        {text: '热门武器', link: '/配置/中断/'},
+    ]
+}
+
+
+
+//导航栏指南
+function navGuide(): DefaultTheme.NavItemWithLink[] {
+    return [
+        {text: '任务类型', link: '/热门模式/仲裁/'},
+        {text: '热门玩法', link: '/热门玩法/仲裁/'},
+    ]
+}
+
+
+//侧边栏热门玩法
 function sidebarHotType(): DefaultTheme.SidebarItem[] {
     return [
         {
@@ -127,17 +144,10 @@ function sidebarHotType(): DefaultTheme.SidebarItem[] {
                 {text: '待更新', link: '/中断/无'}
             ]
         },
-        {
-            text: "新模式",
-            collapsed: false,
-            items: [
-                {text: '待更新', link: '/新模式/无'},
-                {text: '待更新', link: '/新模式/无'}
-            ]
-        }
     ]
 }
 
+//侧边栏机制
 function sidebarMachine(): DefaultTheme.SidebarItem[] {
     return [
         {
@@ -151,10 +161,18 @@ function sidebarMachine(): DefaultTheme.SidebarItem[] {
     ]
 }
 
-function sidebarWarframe(): DefaultTheme.SidebarItem[] {
+//侧边栏战甲
+function sidebarBuild(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: '战甲攻略',
+            text: '战甲',
+            collapsed: false,
+            items: [
+                {text: '伏特', link: '/战甲/'},
+            ]
+        },
+        {
+            text: '武器',
             collapsed: false,
             items: [
                 {text: '伏特', link: '/伏特'},
@@ -163,11 +181,18 @@ function sidebarWarframe(): DefaultTheme.SidebarItem[] {
     ]
 }
 
-
-function navLatest(): DefaultTheme.NavItemWithLink[] {
+//侧边栏最新
+function sidebarLatest(): DefaultTheme.SidebarItem[] {
     return [
-        {text: '新战甲', link: '/战甲攻略/伏特'},
-        {text: '新模式', link: '/热门模式/中断/'},
-        {text: '新玩法', link: '/热门玩法/中断/'},
+        {
+            text: "最新",
+            collapsed: false,
+            items: [
+                {text: '新战甲', link: '/减伤机制综述'},
+                {text: '新武器', link: '/减伤机制综述'},
+                {text: '新模式', link: '/减伤机制综述'},
+                {text: '新玩法', link: '/中断/无'}
+            ]
+        }
     ]
 }
