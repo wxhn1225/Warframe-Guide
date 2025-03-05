@@ -1,0 +1,11 @@
+/* 强制覆盖所有表格样式 */
+.vp-doc table {
+  margin: 0 auto !important;
+  width: auto !important; /* 关键修复项 */
+  border-collapse: collapse;
+}
+
+/* 处理可能存在的父容器冲突 */
+.vp-doc > div > table {
+  display: table !important;
+}
