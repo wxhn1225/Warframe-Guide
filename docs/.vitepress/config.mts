@@ -141,6 +141,17 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
                 {text: '中断', link: '中断'},
             ]
         },
+                {
+            text: "自由漫游",
+            collapsed: false,
+            base: '/指南/任务类型/自由漫游',
+            items: [
+                {text: '夜灵平原', link: '捕获'},
+                {text: '蜘蛛山谷', link: '歼灭'},
+                {text: '拦截', link: '拦截'},
+                {text: '中断', link: '中断'},
+            ]
+        },
         {
             text: "反重力曲翼",
             collapsed: false,
@@ -281,6 +292,10 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
                 {text: 'JJC（待更新）', link: 'JJC'},
                 {text: '中断9999', link: '中断9999'},
                 {text: '仲裁（待更新）', link: '仲裁'},
+                {text: '投稿',
+                items: [
+                    {text: 'JJC玩法分享初稿', link: 'JJC玩法分享初稿'},
+                ]},
             ]
         },
         {
