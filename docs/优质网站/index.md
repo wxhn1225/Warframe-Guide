@@ -1,4 +1,4 @@
-# <center>优质网站</center>
+# 优质网站
 
 ## :t-rex:通用
 

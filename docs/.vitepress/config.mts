@@ -141,7 +141,7 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
                 {text: '中断', link: '中断'},
             ]
         },
-                {
+        {
             text: "自由漫游",
             collapsed: false,
             base: '/指南/任务类型/自由漫游',
@@ -292,10 +292,13 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
                 {text: 'JJC（待更新）', link: 'JJC'},
                 {text: '中断9999', link: '中断9999'},
                 {text: '仲裁（待更新）', link: '仲裁'},
-                {text: '投稿',collapsed: false,
-                items: [
-                    {text: 'JJC玩法分享初稿', link: 'JJC玩法分享初稿'},
-                ]},
+                {
+                    text: '投稿',
+                    collapsed: false,
+                    items: [
+                        {text: 'JJC玩法分享初稿', link: 'JJC玩法分享初稿'},
+                    ]
+                },
             ]
         },
         {
