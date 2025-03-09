@@ -1,4 +1,4 @@
-# <center>JJC玩法分享</center>
+# JJC玩法分享
 
 ## 前言
 

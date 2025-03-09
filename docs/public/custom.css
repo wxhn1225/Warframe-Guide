@@ -9,3 +9,7 @@
 .vp-doc > div > table {
   display: table !important;
 }
+
+h1 {
+  text-align: center;
+}

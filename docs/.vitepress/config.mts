@@ -292,7 +292,7 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
                 {text: 'JJC（待更新）', link: 'JJC'},
                 {text: '中断9999', link: '中断9999'},
                 {text: '仲裁（待更新）', link: '仲裁'},
-                {text: '投稿',
+                {text: '投稿',collapsed: false,
                 items: [
                     {text: 'JJC玩法分享初稿', link: 'JJC玩法分享初稿'},
                 ]},
