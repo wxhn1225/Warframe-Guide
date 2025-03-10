@@ -20,11 +20,10 @@ export default defineConfig({
         }
     },
     head: [
-        ['link', {rel: 'icon', href: '/Warframe-Guide/哈士奇.png'}],
-        ['link', {rel: 'stylesheet', href: '/Warframe-Guide/custom.css'}], //表格居中
+        ['link', {rel: 'icon', href: '哈士奇.png'}],
+        ['link', {rel: 'stylesheet', href: 'custom.css'}], //表格居中
     ],
     lastUpdated: true,
-    base: "/Warframe-Guide/",
     title: "Warframe Guide",
     description: "星际战甲知识库",
     themeConfig: {
@@ -73,7 +72,7 @@ export default defineConfig({
         ],
         footer: {
             message: '星际战甲Q群：602704599',
-            copyright: `版权所有 © 2025-${new Date().getFullYear()} 喜欢`
+            copyright: `版权所有 © 2025-${new Date().getFullYear()} 喜欢 | <a href="https://beian.miit.gov.cn" target="_blank">蜀ICP备2025127462号</a>`
         },
         lastUpdated: {
             text: '上次更新',
@@ -296,7 +295,7 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
                     text: '投稿',
                     collapsed: false,
                     items: [
-                        {text: 'JJC玩法分享初稿', link: 'JJC玩法分享初稿'},
+                        {text: 'JJC玩法分享', link: 'JJC玩法分享'},
                     ]
                 },
             ]
