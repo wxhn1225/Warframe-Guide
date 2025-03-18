@@ -181,7 +181,7 @@ function sidebarMachine(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/机制/机制讲堂/',
             items: [
-                {text: '01-伤害计算（待更新）', link: '01-伤害计算'},
+                {text: '01-伤害计算', link: '01-伤害计算'},
                 {text: '02-暴击（待更新）', link: '02-暴击'},
                 {text: '03-量化（待更新）', link: '03-量化'},
                 {text: '04-护甲（待更新）', link: '04-护甲'},
@@ -316,8 +316,8 @@ function sidebarVersion(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/版本相关/',
             items: [
-                {text: '最新', link: '最新'},
                 {text: '版本重点', link: '版本重点'},
+                {text: '最新', link: '最新'},
             ]
         },
     ]
