@@ -64,6 +64,7 @@ export default defineConfig({
             '/指南/任务类型/': sidebarMissionType(),
             '/指南/热门玩法/': sidebarHotPlay(),
             '/竞速/': sidebarSpeed(),
+            '/版本相关/': sidebarVersion(),
         },
 
         socialLinks: [
@@ -102,8 +103,8 @@ function nav(): DefaultTheme.NavItem[] {
             items: navGuide(),
         },
         {
-            text: '最新',
-            link: '/最新/',
+            text: '版本相关',
+            link: '/版本相关/版本重点',
         }
     ]
 }
@@ -212,7 +213,8 @@ function sidebarWarframe(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/配置/战甲/',
             items: [
-                {text: '伏特', link: '伏特'},
+                {text: '伏特（Volt）', link: '伏特'},
+                {text: '剧毒之触（Saryn）', link: '剧毒之触'},
             ]
         },
     ]
@@ -227,7 +229,7 @@ function sidebarWeapon(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/配置/热门武器/主手/',
             items: [
-                {text: '爆裂生化炮', link: '爆裂生化炮'},
+                {text: '爆裂生化炮（托里德）', link: '爆裂生化炮'},
             ]
         },
         {
@@ -243,7 +245,7 @@ function sidebarWeapon(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/配置/热门武器/近战/',
             items: [
-                {text: '真理权杖', link: '真理权杖'},
+                {text: '真理权杖（执法者）', link: '真理权杖'},
             ]
         },
     ]
@@ -288,16 +290,9 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/指南/热门玩法/后期/',
             items: [
-                {text: 'JJC（待更新）', link: 'JJC'},
+                {text: 'JJC玩法分享', link: 'JJC玩法分享'},
                 {text: '中断9999', link: '中断9999'},
                 {text: '仲裁（待更新）', link: '仲裁'},
-                {
-                    text: '投稿',
-                    collapsed: false,
-                    items: [
-                        {text: 'JJC玩法分享', link: 'JJC玩法分享'},
-                    ]
-                },
             ]
         },
         {
@@ -309,6 +304,20 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
                 {text: '星币获取（待更新）', link: '星币获取'},
                 {text: '材料获取（待更新）', link: '材料获取'},
                 {text: '震地（待更新）', link: '震地'},
+            ]
+        },
+    ]
+}
+
+function sidebarVersion(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: '版本相关',
+            collapsed: false,
+            base: '/版本相关/',
+            items: [
+                {text: '最新', link: '最新'},
+                {text: '版本重点', link: '版本重点'},
             ]
         },
     ]
