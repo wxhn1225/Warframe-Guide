@@ -13,4 +13,4 @@
 
 ### 小丑配卡
 配卡要点：集团2、强度、范围
-![Mirge.png](../src/Mirage.png)
+![Mirage.png](../src/Mirage.png)
