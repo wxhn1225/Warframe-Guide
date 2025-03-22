@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 优质网站
-      link: /优质网站/
+      link: /Web/
     - theme: alt
       text: 竞速
-      link: /竞速/
+      link: /Speed/
 
 features:
   - title: 待更新

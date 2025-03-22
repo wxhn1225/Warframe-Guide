@@ -4,7 +4,7 @@
 这里先讲实际例子，最后作出总结，方便理解
 
 ## 苏普拉例子
-![without-mod.png](src%2Fwithout-mod.png)
+![without-mod.png](src/without-mod.png)
 这期文章只用到以下信息，且80%的内容只用<span style="color:#d4aaff; font-size:20px; font-weight:bold">初始面板40</span>
 
 | 初始面板 | 冲击 | 穿刺 | 切割 |
@@ -30,7 +30,7 @@ A: 以下回答需要知道伤害计算的基础才听得懂。
 :::
 
 ### 1. 膛线
-![tangx.png](src%2Ftangx.png)
+![tangx.png](src/tangx.png)
 言归正传，我们上一张【膛线】，效果：**+165%的伤害**  
 那么此时面板就是 
 $$
@@ -45,7 +45,7 @@ $$
 :::
 
 ### 2. 膛线+地狱火
-![tx+dyh.png](src%2Ftx%2Bdyh.png)
+![tx+dyh.png](src/tx+dyh.png)
 这时，我们再上一个【地狱火】，效果：**+90%的火焰伤害**
 $$
 \begin{gather*}
@@ -55,7 +55,7 @@ $$
 $$ 
 
 ### 3. 膛线+地狱火+暴风使者
-![tx+dyh+bfsz.png](src%2Ftx%2Bdyh%2Bbfsz.png)
+![tx+dyh+bfsz.png](src/tx+dyh+bfsz.png)
 又上一个【暴风使者】，效果：**+90%的电击伤害**  
 :::tip
 + 可以看到面板上的**火焰**伤害变成0，然后也没有**电击**伤害，而且多出了一个**辐射**伤害。这涉及到**元素复合**的概念，这里就不详细介绍了。  
@@ -78,7 +78,7 @@ A：1.这个除了一些众所周知的，一般都是需要自己去推测算�
 :::
 
 ### 4. 膛线+地狱火+暴风使者+重型口径
-![zkj.png](src%2Fzkj.png)
+![zkj.png](src/zkj.png)
 最后一个例子，上一个【重型口径】，效果：**+165%伤害**
 + 同类①：【膛线】+【重口】    165%+165% = 330%
 + 同类②：【地狱火】+【暴风使者】    90%+90% = 180%

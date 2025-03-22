@@ -20,7 +20,7 @@ export default defineConfig({
         }
     },
     head: [
-        ['link', {rel: 'icon', href: '哈士奇.png'}],
+        ['link', {rel: 'icon', href: 'dog.png'}],
         ['link', {rel: 'stylesheet', href: 'custom.css'}], //表格居中
     ],
     lastUpdated: true,
@@ -29,7 +29,7 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         outline: {level: [2, 3], label: "大纲",},
-        logo: '/书籍.png', //站点logo
+        logo: '/book.png', //站点logo
         docFooter:
             {
                 prev: '上一页',
@@ -58,13 +58,13 @@ export default defineConfig({
         nav: nav(),
 
         sidebar: {
-            '/机制/': sidebarMachine(),
-            '/配置/战甲/': sidebarWarframe(),
-            '/配置/热门武器/': sidebarWeapon(),
-            '/指南/任务类型/': sidebarMissionType(),
-            '/指南/热门玩法/': sidebarHotPlay(),
-            '/竞速/': sidebarSpeed(),
-            '/版本相关/': sidebarVersion(),
+            '/Machine/': sidebarMachine(),
+            '/Build/Warframe/': sidebarWarframe(),
+            '/Build/Weapon/': sidebarWeapon(),
+            '/Guide/MissionType/': sidebarMissionType(),
+            '/Guide/HotPlay/': sidebarHotPlay(),
+            '/Speed/': sidebarSpeed(),
+            '/Version/': sidebarVersion(),
         },
 
         socialLinks: [
@@ -92,7 +92,7 @@ function nav(): DefaultTheme.NavItem[] {
     return [
         {
             text: '机制',
-            link: '/机制/',
+            link: '/Machine/',
         },
         {
             text: '配置',
@@ -104,7 +104,7 @@ function nav(): DefaultTheme.NavItem[] {
         },
         {
             text: '版本相关',
-            link: '/版本相关/版本重点',
+            link: '/Version/Note',
         }
     ]
 }
@@ -112,8 +112,8 @@ function nav(): DefaultTheme.NavItem[] {
 //导航栏配置
 function navBuild(): DefaultTheme.NavItemWithLink[] {
     return [
-        {text: '战甲', link: '/配置/战甲/'},
-        {text: '热门武器', link: '/配置/热门武器/'},
+        {text: '战甲', link: '/Build/Warframe/'},
+        {text: '热门武器', link: '/Build/Weapon/'},
     ]
 }
 
@@ -121,8 +121,8 @@ function navBuild(): DefaultTheme.NavItemWithLink[] {
 //导航栏指南
 function navGuide(): DefaultTheme.NavItemWithLink[] {
     return [
-        {text: '任务类型', link: '/指南/任务类型/'},
-        {text: '热门玩法', link: '/指南/热门玩法/'},
+        {text: '任务类型', link: '/Guide/MissionType/'},
+        {text: '热门玩法', link: '/Guide/HotPlay/'},
     ]
 }
 
@@ -133,7 +133,7 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
         {
             text: "普通",
             collapsed: false,
-            base: '/指南/任务类型/普通',
+            base: '/Guide/MissionType/普通',
             items: [
                 {text: '捕获', link: '捕获'},
                 {text: '歼灭', link: '歼灭'},
@@ -144,7 +144,7 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
         {
             text: "自由漫游",
             collapsed: false,
-            base: '/指南/任务类型/自由漫游',
+            base: '/Guide/MissionType/自由漫游',
             items: [
                 {text: '夜灵平原', link: '捕获'},
                 {text: '蜘蛛山谷', link: '歼灭'},
@@ -155,19 +155,19 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
         {
             text: "反重力曲翼",
             collapsed: false,
-            base: '/指南/任务类型/反重力曲翼',
+            base: '/Guide/MissionType/反重力曲翼',
             items: []
         },
         {
             text: "航道星舰",
             collapsed: false,
-            base: '/指南/任务类型/航道星舰',
+            base: '/Guide/MissionType/航道星舰',
             items: []
         },
         {
             text: "石榴2代",
             collapsed: false,
-            base: '/指南/任务类型/石榴2代',
+            base: '/Guide/MissionType/石榴2代',
             items: []
         },
     ]
@@ -179,9 +179,9 @@ function sidebarMachine(): DefaultTheme.SidebarItem[] {
         {
             text: "机制讲堂",
             collapsed: false,
-            base: '/机制/机制讲堂/',
+            base: '/Machine/Lecture/',
             items: [
-                {text: '01-伤害计算', link: '01-伤害计算'},
+                {text: '01-伤害计算', link: '01-DMG'},
                 {text: '02-暴击（待更新）', link: '02-暴击'},
                 {text: '03-量化（待更新）', link: '03-量化'},
                 {text: '04-护甲（待更新）', link: '04-护甲'},
@@ -193,13 +193,13 @@ function sidebarMachine(): DefaultTheme.SidebarItem[] {
                 {text: '10-重击触染（待更新）', link: '10-重击触染'},
                 {text: '11-投射物类技能（待更新）', link: '11-投射物类技能'},
                 {text: '12-成长系数（待更新）', link: '12-成长系数'},
-                {text: '13-减伤综述', link: '13-减伤综述'},
+                {text: '13-减伤综述', link: '13-DR'},
             ]
         },
         {
             text: '机制研究',
             collapsed: false,
-            base: '/机制/机制研究/',
+            base: '/Machine/Study/',
             items: []
         }
     ]
@@ -211,7 +211,7 @@ function sidebarWarframe(): DefaultTheme.SidebarItem[] {
         {
             text: '战甲',
             collapsed: false,
-            base: '/配置/战甲/',
+            base: '/Build/Warframe/',
             items: [
                 {text: '伏特（Volt）', link: '伏特'},
                 {text: '剧毒之触（Saryn）', link: '剧毒之触'},
@@ -227,7 +227,7 @@ function sidebarWeapon(): DefaultTheme.SidebarItem[] {
         {
             text: '主手',
             collapsed: false,
-            base: '/配置/热门武器/主手/',
+            base: '/Build/Weapon/Primary/',
             items: [
                 {text: '爆裂生化炮（托里德）', link: '爆裂生化炮'},
             ]
@@ -235,7 +235,7 @@ function sidebarWeapon(): DefaultTheme.SidebarItem[] {
         {
             text: '副手',
             collapsed: false,
-            base: '/配置/热门武器/副手/',
+            base: '/Build/Weapon/Secondary/',
             items: [
                 {text: '阿利乌', link: '阿利乌'},
             ]
@@ -243,7 +243,7 @@ function sidebarWeapon(): DefaultTheme.SidebarItem[] {
         {
             text: '近战',
             collapsed: false,
-            base: '/配置/热门武器/近战/',
+            base: '/Build/Weapon/Melee/',
             items: [
                 {text: '真理权杖（执法者）', link: '真理权杖'},
             ]
@@ -257,9 +257,9 @@ function sidebarSpeed(): DefaultTheme.SidebarItem[] {
         {
             text: '竞速',
             collapsed: false,
-            base: '/竞速/',
+            base: '/Speed/',
             items: [
-                {text: '中断竞速浅谈', link: '中断竞速浅谈'},
+                {text: '中断竞速浅谈', link: 'Disruption'},
             ]
         }
     ]
@@ -272,7 +272,7 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
         {
             text: "前期",
             collapsed: false,
-            base: '/指南/热门玩法/前期/',
+            base: '/Guide/HotPlay/Early/',
             items: [
                 {text: '4K（待更新）', link: '4k'},
             ]
@@ -280,15 +280,15 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
         {
             text: "中期",
             collapsed: false,
-            base: '/指南/热门玩法/中期/',
+            base: '/Guide/HotPlay/Mid/',
             items: [
-                {text: '赤毒、信条、终幕', link: '赤毒、信条、终幕'},
+                {text: '赤毒、信条、终幕', link: 'Lich'},
             ]
         },
         {
             text: "后期",
             collapsed: false,
-            base: '/指南/热门玩法/后期/',
+            base: '/Guide/HotPlay/Late/',
             items: [
                 {text: 'JJC玩法分享', link: 'JJC玩法分享'},
                 {text: '中断9999', link: '中断9999'},
@@ -298,12 +298,12 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
         {
             text: "通用",
             collapsed: false,
-            base: '/指南/热门玩法/通用/',
+            base: '/Guide/HotPlay/General/',
             items: [
                 {text: '日、周常任务（待更新）', link: '日、周常任务'},
                 {text: '星币获取（待更新）', link: '星币获取'},
                 {text: '材料获取（待更新）', link: '材料获取'},
-                {text: '震地（待更新）', link: '震地'},
+                {text: '震地（待更新）', link: 'Slam'},
             ]
         },
     ]
@@ -314,10 +314,10 @@ function sidebarVersion(): DefaultTheme.SidebarItem[] {
         {
             text: '版本相关',
             collapsed: false,
-            base: '/版本相关/',
+            base: '/Version/',
             items: [
-                {text: '版本重点', link: '版本重点'},
-                {text: '最新', link: '最新'},
+                {text: '版本重点', link: 'Note'},
+                {text: '最新', link: 'New'},
             ]
         },
     ]
