@@ -16,3 +16,10 @@
 
 [舞台防御](../Guide/MissionType/Höllvania/SolsticeSquare.md)
 > 刷**赤焰狂歌（Temple）**和**暴乱-848**
+
+### 活动
+
+---
+
+[国服白嫖活动](https://www.bilibili.com/blackboard/era/ikKyDPtnB5aXVO8K.html)
+> https://www.bilibili.com/blackboard/era/ikKyDPtnB5aXVO8K.html
