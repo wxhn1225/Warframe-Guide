@@ -282,7 +282,7 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/指南/热门玩法/中期/',
             items: [
-                {text: '赤毒、信条、安可（待更新）', link: '赤毒、信条、安可'},
+                {text: '赤毒、信条、终幕', link: '赤毒、信条、终幕'},
             ]
         },
         {
