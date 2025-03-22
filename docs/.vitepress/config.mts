@@ -133,7 +133,7 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
         {
             text: "普通",
             collapsed: false,
-            base: '/Guide/MissionType/普通',
+            base: '/Guide/MissionType/普通/',
             items: [
                 {text: '捕获', link: '捕获'},
                 {text: '歼灭', link: '歼灭'},
@@ -142,9 +142,17 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
             ]
         },
         {
+            text: "霍尼瓦亚",
+            collapsed: false,
+            base: '/Guide/MissionType/Höllvania/',
+            items: [
+                {text: '舞台防御', link: 'SolsticeSquare'},
+            ]
+        },
+        {
             text: "自由漫游",
             collapsed: false,
-            base: '/Guide/MissionType/自由漫游',
+            base: '/Guide/MissionType/自由漫游/',
             items: [
                 {text: '夜灵平原', link: '捕获'},
                 {text: '蜘蛛山谷', link: '歼灭'},
@@ -155,21 +163,16 @@ function sidebarMissionType(): DefaultTheme.SidebarItem[] {
         {
             text: "反重力曲翼",
             collapsed: false,
-            base: '/Guide/MissionType/反重力曲翼',
+            base: '/Guide/MissionType/反重力曲翼/',
             items: []
         },
         {
             text: "航道星舰",
             collapsed: false,
-            base: '/Guide/MissionType/航道星舰',
+            base: '/Guide/MissionType/航道星舰/',
             items: []
         },
-        {
-            text: "石榴2代",
-            collapsed: false,
-            base: '/Guide/MissionType/石榴2代',
-            items: []
-        },
+
     ]
 }
 
