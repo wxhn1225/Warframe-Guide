@@ -293,8 +293,8 @@ function sidebarHotPlay(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             base: '/Guide/HotPlay/Late/',
             items: [
-                {text: 'JJC玩法分享', link: 'JJC玩法分享'},
-                {text: '中断9999', link: '中断9999'},
+                {text: 'JJC玩法分享', link: 'JJC'},
+                {text: '中断9999', link: 'Disruption9999'},
                 {text: '仲裁（待更新）', link: '仲裁'},
             ]
         },
