@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: 竞速
       link: /Speed/
+    - theme: alt
+      text: 杂项
+      link: /Chore/Log
 
 features:
   - title: 待更新

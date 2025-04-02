@@ -65,6 +65,7 @@ export default defineConfig({
             '/Guide/HotPlay/': sidebarHotPlay(),
             '/Speed/': sidebarSpeed(),
             '/Version/': sidebarVersion(),
+            '/Chore/': sidebarChore(),
         },
 
         socialLinks: [
@@ -185,7 +186,7 @@ function sidebarMachine(): DefaultTheme.SidebarItem[] {
             base: '/Machine/Lecture/',
             items: [
                 {text: '01-伤害计算', link: '01-DMG'},
-                {text: '02-暴击（待更新）', link: '02-暴击'},
+                {text: '02-暴击（待更新）', link: '02-Critical'},
                 {text: '03-量化（待更新）', link: '03-量化'},
                 {text: '04-护甲（待更新）', link: '04-护甲'},
                 {text: '05-部位倍率（待更新）', link: '05-部位倍率'},
@@ -218,6 +219,7 @@ function sidebarWarframe(): DefaultTheme.SidebarItem[] {
             items: [
                 {text: '伏特（Volt）', link: '伏特'},
                 {text: '剧毒之触（Saryn）', link: '剧毒之触'},
+                {text: '琉璃仕女（Gara）', link: 'Gara'},
             ]
         },
     ]
@@ -325,3 +327,18 @@ function sidebarVersion(): DefaultTheme.SidebarItem[] {
         },
     ]
 }
+
+function sidebarChore(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: '杂项',
+            collapsed: false,
+            base: '/Chore/',
+            items: [
+                {text: '更新日志', link: 'Log'},
+                {text: '美句', link: 'Love'},
+            ]
+        },
+    ]
+}
+
