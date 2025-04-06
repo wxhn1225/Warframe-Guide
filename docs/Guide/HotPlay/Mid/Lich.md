@@ -29,7 +29,9 @@
     > ② 找到之后，上1杀毒Mod+2效价Mod  
   + **三阶段**
     1. 最终决战不介绍了，全程都有标记指引。
-    2. 完成决战会给你**活体心肌细胞**![Live_Heartcell.png](../src/Live_Heartcell.png)
+    2. 唯一需要注意的是，进入决战让你摧毁的屏幕在这里<img src="../src/LichScreen.png" style="zoom:40%">
+    3. 在BOSS决战，舞台防御那里，可以不用杀小怪，倒地就躺地上，等时间过了，BOSS自然就会现血条  
+    4. 完成决战会给你**活体心肌细胞**![Live_Heartcell.png](../src/Live_Heartcell.png)
   + **四阶段**  
     最后就是在埃莉诺兑换**终幕武器**即可
 

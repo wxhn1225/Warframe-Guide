@@ -183,7 +183,11 @@
 </style>
 
 <div class="quote-box">
-2025-04-02：<span class="vintage">此生如若不是你，何愁青丝配白衣</span>
+<p><b>2025-04-06：</b><span class="vintage">满眼醉意，山河皆你</span></p>
+<p><b>2025-04-05：</b><span class="vintage">我以为要是唱的用心良苦，你总会对我多点在乎</span></p>
+<p><b>2025-04-04：</b><span class="vintage">穷极所思，可赴千里</span></p>
+<p><b>2025-04-03：</b><span class="vintage">喜你为疾，药石无医</span></p>
+<p><b>2025-04-02：</b><span class="vintage">此生如若不是你，何愁青丝配白衣</span></p>
 </div>
 
 [//]: # ()
